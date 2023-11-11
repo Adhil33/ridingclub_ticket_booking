@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include online_ticket_booking *.css
+recursive-include online_ticket_booking *.csv
+recursive-include online_ticket_booking *.html
+recursive-include online_ticket_booking *.ico
+recursive-include online_ticket_booking *.js
+recursive-include online_ticket_booking *.json
+recursive-include online_ticket_booking *.md
+recursive-include online_ticket_booking *.png
+recursive-include online_ticket_booking *.py
+recursive-include online_ticket_booking *.svg
+recursive-include online_ticket_booking *.txt
+recursive-exclude online_ticket_booking *.pyc
