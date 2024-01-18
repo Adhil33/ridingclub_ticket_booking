@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "MS.######",
+ "creation": "2023-11-11 13:29:50.823597",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_information",
+  "full_name",
+  "from_date",
+  "to_date",
+  "paid",
+  "column_break_qqshe",
+  "fetched_email",
+  "fetched_phone",
+  "column_break_vdp7n",
+  "motorcycle_brand",
+  "model_name",
+  "color",
+  "insurance_number",
+  "pollution_expiring_date",
+  "section_break_ypzyl",
+  "booked_tickets",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fetch_from": "customer_information.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "paid",
+   "fieldtype": "Check",
+   "label": "Paid"
+  },
+  {
+   "fieldname": "column_break_qqshe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Membership",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "booked_tickets",
+   "fieldtype": "Table",
+   "label": "Booked Tickets",
+   "options": "Booked Tickets Child"
+  },
+  {
+   "fieldname": "section_break_ypzyl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer_information",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer Information",
+   "options": "Customer Information",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fetched_email",
+   "fieldtype": "Data",
+   "label": "Fetched Email",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "fetched_phone",
+   "fieldtype": "Data",
+   "label": "Fetched Phone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vdp7n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "motorcycle_brand",
+   "fieldtype": "Data",
+   "label": "Motorcycle Brand",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "model_name",
+   "fieldtype": "Data",
+   "label": "Model Name",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "Color",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "insurance_number",
+   "fieldtype": "Data",
+   "label": "Insurance Number",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "pollution_expiring_date",
+   "fieldtype": "Data",
+   "label": "Pollution Expiring Date",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-23 13:41:08.628359",
+ "modified_by": "Administrator",
+ "module": "Online Ticket Booking",
+ "name": "Membership",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Event Organizer",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

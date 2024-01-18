@@ -1,0 +1,44 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<!DOCTYPE html>
+<html>
+<head>
+    
+<title>RIDERS CLUB EVENTS</title>
+    <!-- Other meta tags, stylesheets, etc. -->
+<style>
+    body {
+        background-image: url('https://www.shutterstock.com/shutterstock/photos/1651713127/display_1500/stock-vector-riders-club-vector-logo-design-1651713127.jpg');
+         /* Additional background properties like size, position, repeat, etc., can be added here */
+        background-size: 10%;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-color: orange;
+    }
+</style>
+
+
+<div class="py-20 row">
+    <div class="col-sm-2">
+        <img alt="{{ event_name }}" src="{{ image }}" />
+    </div>
+    <div class="col">
+        <h1>{{ event_name }}</h1>
+        <p class="lead">Date and Time: {{ date_and_time }}</p>
+        <p class="lead">Location: {{ location }}</p>
+        <div>
+        
+        </div>
+        <div class="mt-4">
+            <div>Ticket Price: <strong>{{ ticket_price }}</strong></div>
+            <div>Total Tickets Available: <strong>{{ total_tickets_available }}</strong></div>
+            <a href="http://127.0.0.1:8001/app/ticket-booking/new-ticket-booking-gcnlntgkke" class="btn btn-primary mt-3">Book Tickets</a>
+        </div>
+        <p>{{ ride_safe }}</p>
+    </div>
+</div>
+
+{% endblock %}
+
+

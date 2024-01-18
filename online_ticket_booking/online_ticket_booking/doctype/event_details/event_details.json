@@ -1,0 +1,163 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "EVENT.####",
+ "creation": "2023-11-11 09:35:48.925656",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "event_name",
+  "image",
+  "column_break_v5dhp",
+  "date_and_time",
+  "location",
+  "section_break_u23ac",
+  "ticket_price",
+  "column_break_19qhp",
+  "total_tickets_available",
+  "route",
+  "published",
+  "section_break_v5ey0",
+  "ride_safe"
+ ],
+ "fields": [
+  {
+   "fieldname": "event_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Event Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "date_and_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Date and Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ticket_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Ticket Price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_tickets_available",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Tickets Available"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "column_break_v5dhp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_u23ac",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ride_safe",
+   "fieldtype": "Long Text",
+   "label": "Ride Safe"
+  },
+  {
+   "fieldname": "column_break_19qhp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_v5ey0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  }
+ ],
+ "has_web_view": 1,
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2023-12-08 15:16:05.846383",
+ "modified_by": "Administrator",
+ "module": "Online Ticket Booking",
+ "name": "Event Details",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Event Organizer",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Customer",
+   "share": 1
+  }
+ ],
+ "route": "eventdetails",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

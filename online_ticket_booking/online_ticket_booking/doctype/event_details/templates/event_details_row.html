@@ -1,0 +1,18 @@
+<div class="py-8 row">
+    <div class="col-sm-2">
+        <img alt="{{ doc.event_name }}" src="{{ doc.image }}" />
+    </div>
+    <div class="col">
+        <a class="font-size-lg" href="/ridersclub/{{ doc.name }}">{{ doc.event_name }}</a>
+        <p class="text-muted">Date and Time: {{ doc.date_and_time }}</p>
+        <p class="text-muted">Location: {{ doc.location }}</p>
+        <div>
+    
+        </div>
+        <div class="mt-4">
+            <div>Ticket Price: <strong>{{ doc.ticket_price }}</strong></div>
+            <div>Total Tickets Available: <strong>{{ doc.total_tickets_available }}</strong></div>
+        </div>
+    </div>
+</div>
+

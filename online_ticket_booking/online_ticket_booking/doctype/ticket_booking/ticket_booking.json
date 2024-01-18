@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TICKET.#######",
+ "creation": "2023-11-11 12:06:22.388968",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "event",
+  "event_name",
+  "customer_information",
+  "customer_name",
+  "email_address",
+  "column_break_7msnx",
+  "ticket_price",
+  "number_of_tickets",
+  "total_amount",
+  "payment_status",
+  "booking_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "event",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Event",
+   "options": "Event Details",
+   "reqd": 1
+  },
+  {
+   "fieldname": "number_of_tickets",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Number of Tickets",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Payment Status",
+   "options": "Paying\nPending",
+   "reqd": 1
+  },
+  {
+   "fieldname": "booking_date",
+   "fieldtype": "Datetime",
+   "label": "Booking Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Ticket Booking",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_7msnx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_information",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer Information",
+   "options": "Customer Information",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "event.event_name",
+   "fieldname": "event_name",
+   "fieldtype": "Data",
+   "label": "Event Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer_information.full_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "event.ticket_price",
+   "fieldname": "ticket_price",
+   "fieldtype": "Currency",
+   "label": "Ticket Price",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer_information.email_address",
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-20 11:45:49.916684",
+ "modified_by": "Administrator",
+ "module": "Online Ticket Booking",
+ "name": "Ticket Booking",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Customer",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Event Organizer",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
